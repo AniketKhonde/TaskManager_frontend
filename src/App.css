@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.TaskForm {
+    display: flex;
+    flex-direction: row; /* Or row, depending on your layout */
+    width: 50%;
+    border: 2px solid black;
+    box-shadow: black;
+    border-radius: 10px;
+    margin-left: 22%;
+    margin-top: 50px;
+    padding: 20px; /* Optional: Adds padding inside the form */
   }
-}
+  
+ .Form{
+    display: flex;
+    margin-left: 17%;
+    gap: 10px;
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ .TaskList{
+    margin-left: 22%;
+    margin-top: 60px;
+    border: 2px solid black;
+    box-shadow: black;
+    border-radius: 20px;
+    width: 49%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: ceter;
+    padding: 30px;
+ }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ .button {
+    margin-right:20px;
+    display: inline-block;
+    padding: 10px 20px; /* Vertical | Horizontal padding */
+    font-size: 16px; /* Font size for the button text */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the text */
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for hover effects */
   }
-  to {
-    transform: rotate(360deg);
+  
+  .button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
   }
-}
+  
+  .button:active {
+    background-color: #004080; /* Even darker background color on click */
+    transform: scale(1); /* Reset button size on click */
+  }
+  
+  .button:disabled {
+    background-color: #c0c0c0; /* Light grey background for disabled state */
+    color: #6c757d; /* Darker grey text for disabled state */
+    cursor: not-allowed; /* Change cursor to indicate button is disabled */
+  }
+
+  .heading{
+    margin-left: 33%;
+    margin-top:60px
+  }
